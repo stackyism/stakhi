@@ -21,6 +21,9 @@
   "homepage": "https://github.com/stackyism/stakhi#readme",
   "dependencies": {
     "@material-ui/core": "^4.9.8",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.47",
+    "@types/react": "^16.9.27",
     "@types/styletron-engine-atomic": "^1.1.0",
     "@types/styletron-react": "^5.0.2",
     "@types/styletron-standard": "^2.0.0",
@@ -33,5 +36,9 @@
     "styletron-engine-atomic": "^1.4.6",
     "styletron-react": "^5.2.7",
     "swr": "^0.1.18"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.5",
+    "typescript": "^3.8.3"
   }
 }

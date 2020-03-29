@@ -1,8 +1,9 @@
 // DOCUMENTATION: http://styletron.org
 
-import { useStyletron } from 'styletron-react'
-import { LightTheme, BaseProvider, styled } from 'baseui';
+import { LightTheme, BaseProvider, styled, DarkTheme} from 'baseui';
 import { StatefulInput } from 'baseui/input';
+import Button from '@material-ui/core/Button';
+import Tree from './../src/components/Tree';
 
 const Centered = styled('div', {
   display: 'flex',
@@ -12,9 +13,7 @@ const Centered = styled('div', {
 });
 
 export default () => (
-  <BaseProvider theme={LightTheme}>
-    <Centered>
-      <StatefulInput />
-    </Centered>
+  <BaseProvider theme={DarkTheme}>
+    <Tree/>
   </BaseProvider>
 );
