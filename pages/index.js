@@ -3,7 +3,8 @@
 import { LightTheme, BaseProvider, styled, DarkTheme} from 'baseui';
 import { StatefulInput } from 'baseui/input';
 import Button from '@material-ui/core/Button';
-import Tree from './../src/components/Tree';
+
+import App from './../src/workspace/App';
 
 const Centered = styled('div', {
   display: 'flex',
@@ -14,6 +15,6 @@ const Centered = styled('div', {
 
 export default () => (
   <BaseProvider theme={DarkTheme}>
-    <Tree/>
+    <App/>
   </BaseProvider>
 );
