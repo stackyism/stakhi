@@ -26,7 +26,7 @@ type NavigatorProps = {
 const Navigator: React.FC<NavigatorProps> = props => {
     const onNavigate = (event, node) => Router.push(`/p/${node}`);
     return (
-        <Box $as="section" className="h-screen px-8 text-gray-200">
+        <Box $as="section" className="h-screen p-8 text-gray-200">
             <Box className="text-4xl">
                 <span>Saagar Takhi</span>
             </Box>
