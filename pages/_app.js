@@ -2,9 +2,8 @@ import React from 'react'
 import App from 'next/app'
 import { Provider as StyletronProvider } from 'styletron-react'
 import { styletron, debug } from '../styletron'
-import { ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import MaterialTheme from '../src/theme/materialTheme';
+import WorkspaceApp from '../src/workspace/App';
+import '../src/css/tailwind.css';
 
 class MyApp extends App {
   componentDidMount() {
@@ -18,10 +17,9 @@ class MyApp extends App {
     const { Component, pageProps } = this.props
     return (
       <StyletronProvider value={styletron} debug={debug} debugAfterHydration>
-        <ThemeProvider theme={MaterialTheme}>
-          <CssBaseline />
-          <Component {...pageProps} />
-        </ThemeProvider>
+          <WorkspaceApp>
+            <Component {...pageProps} />
+          </WorkspaceApp>
       </StyletronProvider>
     )
   }
